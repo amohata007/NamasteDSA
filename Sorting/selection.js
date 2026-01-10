@@ -1,16 +1,5 @@
 let arr = [5,4,9,15,7,1,0,3];
 
-// function selection(arr){
-//     for(let i=0;i<arr.length;i++){
-//         for(let j=arr.length-1;j>i;j--){
-//             if(arr[j]<arr[i]){
-//                 [arr[j],arr[i]] = [arr[i],arr[j]]
-//             }
-//         }
-//     }
-//     return arr;
-// }
-
 function selection(arr) {
     for (let i = 0; i < arr.length; i++) {
         let minIndex = i;
