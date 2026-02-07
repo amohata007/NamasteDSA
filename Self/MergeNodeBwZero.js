@@ -7,10 +7,7 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
-/**
- * @param {ListNode} head
- * @return {ListNode}
- */
+
 var mergeNodes = function(head) {
     let res = new ListNode();
     let tail = res;
