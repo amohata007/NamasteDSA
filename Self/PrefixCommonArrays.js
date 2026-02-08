@@ -16,3 +16,24 @@ var findThePrefixCommonArray = function(A, B) {
     }
     return res;
 };
+
+//optimal
+//O(n)
+//O(n)
+var findThePrefixCommonArray = function (A, B) {
+    const seen = new Set();
+    const res = [];
+    let common = 0;
+
+    for (let i = 0; i < A.length; i++) {
+        if (seen.has(A[i])) common++;
+        seen.add(A[i]);
+
+        if (seen.has(B[i])) common++;
+        seen.add(B[i]);
+
+        res.push(common);
+    }
+
+    return res;
+};
