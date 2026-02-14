@@ -14,3 +14,24 @@ var recoverOrder = function(order, friends) {
     }
     return res;
 };
+
+//Optimised using Set
+//O(n+m)
+//O(m)
+
+/**
+ * @param {number[]} order
+ * @param {number[]} friends
+ * @return {number[]}
+ */
+var recoverOrder = function(order, friends) {
+    let res = [];
+    let friendSet = new Set(friends);
+
+    for(let i of order){
+        if(friendSet.has(i)){
+            res.push(i)
+        }
+    }
+    return res;
+};
