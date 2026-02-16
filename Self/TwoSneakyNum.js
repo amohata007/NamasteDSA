@@ -24,3 +24,44 @@ var getSneakyNumbers = function(nums) {
 
     return res;
 };
+
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+
+//One Pass Set
+var getSneakyNumbers = function(nums) {
+    // let freq = {};
+    // for(let i=0;i<nums.length;i++){
+    //     if(freq[nums[i]]){
+    //         freq[nums[i]]++;
+    //     }
+    //     else{
+    //         freq[nums[i]] = 1;
+    //     }
+    // }
+
+    // let res = [];
+
+    // for(let key in freq){
+    //     if(freq[key]===2){
+    //         res.push(Number(key))
+    //     }
+    // }
+
+    // return res;
+
+    let seen = new Set();
+    let res = [];
+
+    for(let i of nums){
+        if(seen.has(i)){
+            res.push(i);
+        }
+        else{
+            seen.add(i)
+        }
+    }
+    return res;
+};
