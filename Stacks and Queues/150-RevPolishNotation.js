@@ -3,7 +3,7 @@
  * @return {number}
  */
 //150-LC
-var evalRPN = function(tokens:any) {
+var evalRPN = function(tokens) {
     let stack = [];
     for(let i=0;i<tokens.length;i++){
         if(tokens[i]=="+" || tokens[i]=="*" || tokens[i]=="/" || tokens[i]=="-"){
