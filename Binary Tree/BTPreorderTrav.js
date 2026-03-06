@@ -23,4 +23,17 @@ var preorderTraversal = function(root) {
 
     traversal(root);
     return ans;
+
+    //Iterative Approach
+
+    // if(!root) return [];
+    // let stack = [root];
+    // let ans = [];
+    // while(stack.length){
+    //     let res = stack.pop();
+    //     ans.push(res.val);
+    //     res.right && stack.push(res.right);
+    //     res.left && stack.push(res.left);
+    // }
+    // return ans;
 };
