@@ -39,3 +39,25 @@ var postorderTraversal = function(root) {
 //         ans.push(s2.pop().val);
 //     }
 //     return ans;
+
+//Using single stack
+    // let ans = [];
+    // let stack = [];
+    // let curr = root;
+    // let lastTraverse = null;
+
+    // while(stack.length || curr){
+    //     while(curr){
+    //         stack.push(curr);
+    //         curr = curr.left;
+    //     }
+    //     let peekNode = stack[stack.length-1];
+    //     if(peekNode.right && peekNode.right != lastTraverse){
+    //         curr = peekNode.right;
+    //     }
+    //     else{
+    //         ans.push(peekNode.val);
+    //         lastTraverse = stack.pop();
+    //     }
+    // }
+    // return ans;
