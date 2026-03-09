@@ -28,4 +28,16 @@ var levelOrder = function(root) {
         ans.push(levelArr);
     }
     return ans;
+
+    //Using recursion
+    // if(!root) return [];
+    // let ans = [];
+    // function traversal(curr,level){
+    //     if(!ans[level]) ans[level] = [];
+    //     ans[level].push(curr.val);
+    //     curr.left && traversal(curr.left,level+1);
+    //     curr.right && traversal(curr.right,level+1);
+    // }
+    // traversal(root,0);
+    // return ans;
 };
