@@ -14,3 +14,22 @@ var countPairs = function(nums, target) {
     }
     return count;
 };
+
+//O(nlogn)
+var countPairs = function(nums, target) {
+    nums.sort((a, b) => a - b);
+
+    let left = 0, right = nums.length - 1;
+    let count = 0;
+
+    while (left < right) {
+        if (nums[left] + nums[right] < target) {
+            count += (right - left); // magic line
+            left++;
+        } else {
+            right--;
+        }
+    }
+
+    return count;
+};
