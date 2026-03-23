@@ -9,6 +9,8 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
+//O(n)
+//O(1)
 var swapPairs = function(head) {
     if(!head || !head.next) return head;
     let sentinel = new ListNode();
