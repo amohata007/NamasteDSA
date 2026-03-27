@@ -25,6 +25,7 @@ var maxDepth = function(root) {
     // traverse(root,level);
     // return maxLevel+1;
 
+    //Important
     //Bottom up approach
     if(!root) return 0;
     let leftNode = maxDepth(root.left)
