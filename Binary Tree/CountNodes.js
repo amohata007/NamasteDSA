@@ -26,4 +26,6 @@ var countNodes = function(root) {
     if (!root) return 0;
     
     return 1 + countNodes(root.left) + countNodes(root.right);
+
+    //This solution is in O(n) TC, but have to solve in lesser than this.
 };
