@@ -1,5 +1,5 @@
 // LC-2723
-
+//JS
 /**
  * @param {Promise} promise1
  * @param {Promise} promise2
