@@ -16,7 +16,7 @@
 //     return res;
 // };
 
-//optimised
+//optimised approach
 var distance = function(nums) {
     const map = new Map();
     
