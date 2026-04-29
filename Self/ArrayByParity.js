@@ -2,13 +2,13 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var transformArray = function(nums) {
+var transformArray = function (nums) {
     let res = [];
-    for(let i=0;i<nums.length;i++){
-        if(nums[i]%2===0){
+    for (let i = 0; i < nums.length; i++) {
+        if (nums[i] % 2 === 0) {
             res.push(0);
         }
-        else{
+        else {
             res.push(1);
         }
     }
