@@ -4,13 +4,13 @@
  */
 //O(n2logn)
 //O(1)
-var minimumAverage = function(nums) {
+var minimumAverage = function (nums) {
     let avg = 0;
     let smallest = Infinity;
-    while(nums.length>0){
-        nums = nums.sort((a,b)=>a-b);
-        avg = (nums[0]+nums[nums.length-1])/2;
-        if(avg<smallest){
+    while (nums.length > 0) {
+        nums = nums.sort((a, b) => a - b);
+        avg = (nums[0] + nums[nums.length - 1]) / 2;
+        if (avg < smallest) {
             smallest = avg;
         }
         nums.pop();
@@ -23,7 +23,7 @@ var minimumAverage = function(nums) {
 //Optimized
 //O(nlogn)
 //O(1)
-var minimumAverage = function(nums) {
+var minimumAverage = function (nums) {
     nums.sort((a, b) => a - b);
 
     let left = 0;
