@@ -14,7 +14,7 @@
 //o(1)
 
 // lc-86
-var partition = function(head, x) {
+var partition = function (head, x) {
     let sentinelLess = new ListNode();
     let sentinelMore = new ListNode();
 
@@ -23,13 +23,13 @@ var partition = function(head, x) {
 
     let curr = head;
 
-    while(curr){
+    while (curr) {
         if (curr.val < x) {
-            less.next = curr;      
-            less = less.next;      
+            less.next = curr;
+            less = less.next;
         } else {
-            more.next = curr;       
-            more = more.next;     
+            more.next = curr;
+            more = more.next;
         }
         curr = curr.next;
     }
