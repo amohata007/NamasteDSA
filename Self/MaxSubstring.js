@@ -5,7 +5,7 @@
 //LC-3760
 //O(n)
 //O(k) - 26 - O(1)
-var maxDistinct = function(s) {
+var maxDistinct = function (s) {
     // let freq = {};
     // for(let i=0;i<s.length;i++){
     //     if(freq[s[i]]){
