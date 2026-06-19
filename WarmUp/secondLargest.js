@@ -1,14 +1,14 @@
-let arr = [7,3];
+let arr = [7, 3];
 
-function secondLargestNumber(arr){
+function secondLargestNumber(arr) {
     let largest = -Infinity;
     let secondLargest = -Infinity;
-    for(let i=0;i<arr.length;i++){
-        if(arr[i]>largest){
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > largest) {
             secondLargest = largest;
             largest = arr[i];
         }
-        if(arr[i]>secondLargest && arr[i]!=largest){
+        if (arr[i] > secondLargest && arr[i] != largest) {
             secondLargest = arr[i];
         }
     }
