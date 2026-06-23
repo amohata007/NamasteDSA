@@ -2,10 +2,10 @@
 //O(n)
 //O(1)
 
-var nextGreatestLetter = function(letters, target) {
+var nextGreatestLetter = function (letters, target) {
 
-    for(let i=0;i<letters.length;i++){
-        if(letters[i]>target){
+    for (let i = 0; i < letters.length; i++) {
+        if (letters[i] > target) {
             return letters[i];
         }
     }
@@ -14,7 +14,7 @@ var nextGreatestLetter = function(letters, target) {
 
 // Can be optimised using binary search in O(logn)}
 
-var nextGreatestLetter = function(letters, target) {
+var nextGreatestLetter = function (letters, target) {
     let left = 0;
     let right = letters.length - 1;
     let result = letters[0]; // wrap-around default
